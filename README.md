@@ -11,7 +11,8 @@ Note: sample data (cropped chest Xray image) is in the test_data folder
 bash install.sh to install the custom differentiable forward projection operator.
 
 trained model can be downloaded in https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/cpeng26_jh_edu/Eb8dd9fDON1LintGJ-q7cIUBZNY_NnWZPOkRcrWLk4S2iw?e=d3aasu
-decompress the ct2xray_real_gan_meta foler under run/
+
+decompress the ct2xray_real_gan_meta folder under run/
 
 To run XraySyn and obtain the estimated volume + bone + tissue content:
 python script/test_ct2xray_real.py ct2xray_real_gan_meta
