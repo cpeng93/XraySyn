@@ -20,4 +20,4 @@ python script/test_ct2xray_real.py ct2xray_real_gan_meta
 ```
 
 Results will be saved in the vis folder.
-<img src="./0.png" alt="show" style="zoom:90%;" />
+<img src="./vis/0.png" alt="show" style="zoom:90%;" />
