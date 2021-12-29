@@ -103,7 +103,7 @@ __global__ void dp_trilinear_cuda_forward_kernel(
   // whereas, SwVolume has voxel centers at integers.
   // For the initial interpolated value, only a half stepsize is
   //  considered in the computation.
-  // bool check = minAlpha < maxAlpha;
+  bool check = minAlpha < maxAlpha;
 
   // Mid segments
   while (minAlpha < maxAlpha)
