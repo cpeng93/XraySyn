@@ -41,9 +41,9 @@ class XraySynModel(Base):
         self.avgpool = nn.AvgPool2d(2)
         self.upsample = nn.Upsample(scale_factor=2, mode='bilinear')
         self.bone_absorb = pickle.load(
-            open('/cis/home/cpeng/XraySyn_zip/simplified_bone_absorb_2d.pt', 'rb')).to(self.device)
+            open('simplified_bone_absorb_2d.pt', 'rb')).to(self.device)
         self.tissue_absorb = pickle.load(
-            open('/cis/home/cpeng/XraySyn_zip/simplified_tissue_absorb_2d.pt', 'rb')).to(self.device)
+            open('simplified_tissue_absorb_2d.pt', 'rb')).to(self.device)
         self.l2loss = nn.MSELoss()
         self.views = []
 
