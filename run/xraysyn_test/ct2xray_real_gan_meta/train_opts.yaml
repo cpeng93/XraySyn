@@ -1,0 +1,41 @@
+data:
+  batch_size: 8
+  data_dir: data/lidc/ct
+  param_bound:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  same_proj: true
+model:
+  beta1: 0.5
+  detector_shape:
+  - 128
+  - 128
+  interp: nearest
+  learn:
+    proj1_w: 0.0
+    proj2_w: 1.0
+    proj_adv: 0.0
+    proj_t: l1
+    vol_t: l1
+    vol_w: 0.0
+  lr: 0.0001
+  num_feats_2d: 32
+  num_feats_3d: 16
+  num_layers_2d: 5
+  num_layers_3d: 5
+  pixel_size:
+  - 1.0
+  - 1.0
+  volume_shape:
+  - 128
+  - 128
+  - 128
+schedule:
+  num_epoch: 100
+  print_freq: 5
+  save_freq: 1
+  visual_freq: 10
