@@ -15,7 +15,7 @@ trained model can be downloaded in https://livejohnshopkins-my.sharepoint.com/:u
 decompress the ct2xray_real_gan_meta folder under run/
 
 To run XraySyn and obtain the estimated volume + bone + tissue content:
-python script/test_ct2xray_real.py ct2xray_real_gan_meta
+'python script/test_ct2xray_real.py ct2xray_real_gan_meta'
 
 Results will be saved in the vis folder.
 
